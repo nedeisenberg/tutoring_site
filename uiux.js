@@ -1,4 +1,5 @@
 var return_button = document.getElementById('return');
+var icon = document.getElementById("icon")
 
 function displayReturn(){
 	var scroll = document.body.scrollTop;
@@ -9,5 +10,6 @@ function displayReturn(){
 		
 	}else{
 		return_button.setAttribute("style","display:none;")
+		//return_button.setAttribute("styl")
 	}
 }
