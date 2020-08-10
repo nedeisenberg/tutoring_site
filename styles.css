@@ -78,7 +78,7 @@ a:hover {
 #menu {
 	
 	position:fixed;
-	right:90;
+	right:120;
 	top:160;
 	padding-top:0px;
 	padding-right:0px;
@@ -91,7 +91,7 @@ a:hover {
 
 #menu img{
 
-	margin-left:-20px;
+	margin-left:10px;
 	margin-top:-120px;
 	width:240px;
 	height:240px;
@@ -101,7 +101,7 @@ a:hover {
 	display:none;
 	background:white;
 	font-family:dr;
-	font-size:1.8em;
+	font-size:3em;
 	text-align:center;
 }
 #m1{grid-rows:1;grid-columns:1;}
