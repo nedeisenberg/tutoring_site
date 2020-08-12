@@ -115,6 +115,9 @@ a:hover {
 .side-content{
 	padding-left:40px;
 	padding-right:40px;
+/* 
+	border:solid dimgray 2px;
+ */
 }
 
 .side-content img{
@@ -124,6 +127,18 @@ a:hover {
 	margin-left:auto;
 	margin-right:auto;
 	image-align:center;
+}
+
+.side-content h2{
+	text-align:center;	
+	color:dimgray;
+	font-size:34px;
+}
+
+.side-content p{
+	font-style:italic;
+	color:dimgray;
+	padding-bottom:40px;
 }
 
 #fun-fact img {
@@ -176,7 +191,7 @@ a:hover {
 		margin:0 0 0 0;
 		padding:80 80 20 80;
 		display:grid;
-		grid-template-rows: 300px 300px 300px 150px;
+		grid-template-rows: 280px 300px 300px 150px;
 		grid-template-columns: 60% 40%;
 	}
 
@@ -268,6 +283,7 @@ a:hover {
 	.side-content{
 		padding-left:40px;
 		padding-right:40px;
+		border:none;
 	}
 	
 	.side-content img{
@@ -277,6 +293,22 @@ a:hover {
 		margin-left:auto;
 		margin-right:auto;
 		image-align:center;
+	}
+	
+	.side-content h2{
+		color:black;
+		font-size:40px;	
+		text-align:left;	
+	}
+
+	.side-content p{
+		font-style:normal;
+		color:black;
+		padding-bottom:none;
+	}
+	
+	.side-content h2::after{
+		content: ":";	
 	}
 	
 	#fun-fact {
