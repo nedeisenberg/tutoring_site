@@ -14,10 +14,10 @@ body {
 	margin:0 0 0 0;
 	padding:80 80 20 80;
 	/* 
-display:grid;
+	display:grid;
 	grid-template-rows: 320px 500px 600px 200px;
 	grid-template-cols: 100%;
- */
+ 	*/
 }
 
 h1 {
@@ -132,39 +132,6 @@ a:hover {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-}
-
-.tool-tip{
-	font-family:dr;
-	color:slategray;
-	font-size:18px;
-	text-align:center;
-}
-
-.related-content{
-	height:0px;
-	overflow:hidden;
-	animation-name:unfurl;
-	animation-play-state:paused;
-	animation-duration: 2s;
-	animation-fill-mode:both;
-	animation-iteration-count:1;
-}
-
-.related-content h2 {
-	font-size:40px;
-}
-
-.related-content p {
-	font-size:40px !important;
-}
-
-.tool-tip::before{
-	content: "[";
-}
-
-.tool-tip::after{
-	content: "]";
 }
 
 #experience {
@@ -326,14 +293,6 @@ a:hover {
 		image-align:center;
 	}
 	
-	.tool-tip{
-		display:none;
-	}
-
-	.related-content{
-		overflow:visible;
-	}
-	
 	#unique-focus {
 		grid-row:3;
 		grid-column:2;
@@ -385,9 +344,4 @@ a:hover {
 @keyframes fade-in{
 	from {opacity:0;}
 	to {opacity:1;}
-}
-
-@keyframes unfurl{
-	from {height:0px;}
-	to {height:500px;}
 }
