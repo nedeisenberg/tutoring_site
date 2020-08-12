@@ -7,6 +7,12 @@ var buttons = menu.getElementsByTagName('div');
 var menu_visible = false;
 var screen_width = screen.width;
 
+var fact_visible = false;
+var focus_visible = false;
+
+var fact_content = document.getElementById('fact-content');
+var focus_content = document.getElementById('focus-content');
+
 function displayReturn(){
 	var scroll = document.body.scrollTop;
 	if (scroll>10){
@@ -34,5 +40,29 @@ function displayMenu(){
 			menu_visible=true;
 		}
 	}
-	console.log(screen_width);
+}
+
+function furl_unfurl(element){
+	if(screen_width<=768){
+		if (element.id =='focus'){
+			if(focus_visible){
+				focus_content.setAttribute('style','animation-fill-mode: backwards;');
+				focus_visible=false;
+			}else{
+				focus_content.setAttribute('style','animation-fill-mode: forwards;');
+				focus_content.setAttribute('style','animation-play-state: running;');
+				focus_visible=true;
+			}
+		}else{
+			if(fact_visible){
+				fact_content.setAttribute('style','animation-fill-mode: backwards;');
+				fact_visible=false;
+			}else{
+				fact_content.setAttribute('style','animation-fill-mode: forwards;');
+				fact_content.setAttribute('style','animation-play-state: running;');
+				fact_visible=true;
+			}
+		}	
+	}
+	
 }
