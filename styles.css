@@ -53,7 +53,7 @@ h6 {
 
 p {
 	font-family:dr;
-	font-size:28;
+	font-size:28px;
 }
 
 a, a:visited {
@@ -76,7 +76,6 @@ a:hover {
 }
 
 #menu {
-	
 	position:fixed;
 	right:120;
 	top:160;
@@ -90,7 +89,6 @@ a:hover {
 }
 
 #menu img{padding-bottom:40px;
-
 	margin-left:10px;
 	margin-top:-120px;
 	width:240px;
@@ -109,8 +107,6 @@ a:hover {
 #m3{grid-rows:3;grid-columns:1;}
 
 #about {
-	grid-row:2;
-	grid-column:1;
 	padding-left:40px;
 	padding-right:40px;
 	padding-bottom:40px;
@@ -130,18 +126,12 @@ a:hover {
 	image-align:center;
 }
 
-#fun-fact {
-	grid-row:2;
-	grid-column:2;
-}
-
 #fun-fact img {
 	width:100px;
 	height:100px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-	image-align:center;
 }
 
 .tool-tip{
@@ -153,10 +143,7 @@ a:hover {
 
 .related-content{
 	height:0px;
-
-
 	overflow:hidden;
-	
 	animation-name:unfurl;
 	animation-play-state:paused;
 	animation-duration: 2s;
@@ -164,30 +151,30 @@ a:hover {
 	animation-iteration-count:1;
 }
 
-.tooltip::before{
+.related-content h2 {
+	font-size:40px;
+}
+
+.related-content p {
+	font-size:40px !important;
+}
+
+.tool-tip::before{
 	content: "[";
 }
 
-.tooltip::after{
+.tool-tip::after{
 	content: "]";
 }
 
 #experience {
-	grid-row:3;
-	grid-column:1;
 	padding-left:40px;
 	padding-right:40px;
 	padding-bottom:40px;
 }
 
-#unique-focus {
-	grid-row:3;
-	grid-column:2;
-}
-
 #contact {
-	grid-row:4;
-	grid-column:1;
+	
 	padding-left:40px;
 	padding-right:40px;
 }
@@ -258,7 +245,7 @@ a:hover {
 
 	p {
 		font-family:dr;
-		font-size:16;
+		font-size:16px;
 	}
 
 	a, a:visited {
@@ -344,8 +331,6 @@ a:hover {
 	}
 
 	.related-content{
-		animation-fill-mode:both;
-		height:100%;
 		overflow:visible;
 	}
 	
@@ -404,5 +389,5 @@ a:hover {
 
 @keyframes unfurl{
 	from {height:0px;}
-	to {height:300px;}
+	to {height:500px;}
 }
