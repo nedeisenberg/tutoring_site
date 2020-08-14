@@ -324,7 +324,7 @@ a:hover {
 	}
 	
 	#check-list {
-		grid-row:7/16;
+		grid-row:8/17;
 		grid-column:2;
 	}
 	
@@ -339,7 +339,7 @@ a:hover {
 }
 	
 	#fun-fact {
-		grid-row:15/20;
+		grid-row:16/21;
 		grid-column:2;
 	}
 	
@@ -353,7 +353,7 @@ a:hover {
 	}
 	
 	#unique-focus {
-		grid-row:24/32;
+		grid-row:25/33;
 		grid-column:2;
 	}
 
