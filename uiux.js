@@ -22,7 +22,6 @@ function displayReturn(){
 		
 	}else{
 		return_button.setAttribute("style","display:none;")
-		//return_button.setAttribute("styl")
 	}
 }
 
